@@ -61,4 +61,4 @@ class recomendacao_usuario:
         for u,_ in semelhantes:
             indices += self.metadata.index[self.metadata['user_ID']==u].tolist()
 
-        return self.metadata.ix[indices].drop_duplicates(['user_ID','venue_ID','tips'])
+        return self.metadata.ix[indices].drop_duplicates(['venue_ID'])
